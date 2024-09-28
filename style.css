@@ -2,123 +2,54 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
 body {
+    padding-top: 120px;
     background-image: linear-gradient(to right, rgb(152, 201, 250), white);
 }
-header {
-    position: sticky;
-    top: 0;
-    background: rgba(0,0,0,0.4);
-    width: 100%;
-    height: 100px;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar{
+    background: rgba(0,0,0,0.3);
 }
-.logoinicial {
-    width: fit-content;
-    height: 100%;
+.navbar-brand {
+    margin-left: 20px;
 }
-.logoinicial img {
-    height: 100%;
-    padding: 0px 30px;
-    align-self: center;
-
+.nav-item {
+    margin-right: 14vh;
+    font-weight: 600;
 }
-.barranav ul {
-    list-style: none;
+.nav-link:hover {
+    color: lightblue !important;
 }
-.barranav li {
-    display: inline;
-    margin: 75px;
+.d-flex {
+    margin-right: 10px;
 }
-.barranav li a {
-    font-weight: 700;
-    font-size: 18px;
-    transition: all 0.3s ease 0s;
+.form-control {
+    margin-right: 8px;
 }
-.barranav li a:hover {
-    color: rgb(255, 255, 255);
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(147, 201, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+.navbar-toggler{
+  border: 2px solid rgba(147, 201, 255, 1);
 }
-.formcadastro input {
-    padding-left: 10px;
-    border: none;
-    border-radius: 10px;
+.navbar-toggler:focus{
+  box-shadow: none;
 }
-button {
-    font-size: small;
-    padding: 5px 10px;
+.btn {
+    color: black;
     background-color: rgba(147, 201, 255, 1);
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+    border: 2px solid rgba(147, 201, 255, 1);
 }
-button:hover {
-    background-color: white  ;
-}
-.cadastrolink {
-    margin-left: 5px;
-    margin-right: 15px;
-    font-size: small;
-}
-.cadastrolink {
-    transition: all 0.3s ease 0s;
-}
-.cadastrolink:hover {
-    color: rgb(255, 255, 255);
+.btn:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    border: 2px solid rgb(93, 140, 186);
 }
 main {
     height: 100vh;
 }
-footer{
-    background: rgba(0,0,0,0.4) ;
-    height:auto;
-    width: 100%;
-    font-family: "Quicksand", sans-serif;
-}
-.rodapeprincipal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
-}
-.rodapeprincipal img{
-    height: 50px;
-    margin-top: 6px;
-}
-.rodapeprincipal p{
-    margin-bottom: 15px;
-    font-size: larger;
-    font-weight: 700;
-}
-.linksextra {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.linksextra li {
-    display: inline;
-    margin: 0 10px;
-}
-.linksextra li a {
-    transition: all 0.3s ease 0s;
-}
-.linksextra li a:hover {
-    color: rgb(255, 255, 255);
-}
-.rodapefim {
-    padding: 10px 0;
-    text-align: center;
+footer {
+    background: rgba(0,0,0,0.3);
 }
