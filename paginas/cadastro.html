@@ -22,18 +22,32 @@
               <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="cadastro.html">Cadastre-se</a></li>
             </ul>
-            <form class="d-flex">
-              <input type="text" class="form-control" id="inputUsername" placeholder="Usuário">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
-              <button class="btn btn-outline-success" type="submit">Enviar</button>
-            </form>
           </div>
         </div>
       </nav>
-      <main>
-
+      <main class="maincadastro">
+        <div class="containermain">
+          <section class="headercadastro">
+            <h2><b>Cadastre-se</b></h2>
+          </section>
+          <form id="form" class="formcadastro">
+            <div class="formcontent">
+              <label for="nomecompleto">Nome completo *</label>
+              <input type="text" id="nomecompleto" placeholder="Digite seu nome" required>
+            </div>
+            <div class="formcontent">
+              <label for="email">Email *</label>
+              <input type="email" id="email" placeholder="Digite seu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            </div>
+            <div class="formcontent">
+              <label for="senha">Senha *</label>
+              <input type="password" id="senha" placeholder="Digite sua senha" pattern=".{8,}" title="A senha precisa ter 8 caracteres ou mais" required>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </main>
-      <footer class="py-3 mt-5">
+      <footer class="py-3 mt-4">
         <div class="container text-light text-center">
             <span class="footer-logo"><img src="../imagens/logo2.png" alt="Logo2" width="60"></span><br>
             <span class="text-black"><b>"Em busca da sustentabilidade e qualidade de vida."</b></span><br>
