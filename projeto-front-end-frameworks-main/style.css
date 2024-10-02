@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+/*CSS geral */
+
+body {
+    padding-top: 106px;
+    background-image: linear-gradient(to right, rgb(152, 201, 250), rgb(152, 201, 250), white, white);
+}
+.navbar{
+    background-image: linear-gradient(to right, rgb(152, 201, 250), rgb(152, 201, 250), white, white);
+}
+.navbar-brand {
+    margin-left: 20px;
+}
+.nav-item {
+    margin-right: 14vh;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: white !important;
+}
+.d-flex {
+    margin-right: 10px;
+}
+.form-control {
+    margin-right: 8px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(147, 201, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+.navbar-toggler{
+  border: 2px solid rgb(147, 201, 255);
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.btn {
+    color: black;
+    background-color: rgb(147, 201, 255);
+    border: 2px solid rgb(147, 201, 255);
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    border: 2px solid rgb(93, 140, 186);
+}
+.container-banner {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+.banner-text {
+    padding-top: 13vh;
+    padding-left: 5vh;
+}
+.banner-text h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 8vh;
+}
+.banner-text h2{
+    font-size: 3vh;
+    font-weight: 400;
+}
+footer {
+    background-image: linear-gradient(to right, rgb(114, 153, 195), rgb(214, 214, 214));
+}
+
+/*CSS home */
+
+.banner {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagens/home/banner.jpg);
+    background-size: cover;
+    background-position: 69%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home-titles {
+    margin-top: 20px;
+}
+.home-titles h1{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+.card-gen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    width:325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.06);
+    margin: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content h4 {
+    font-family: "Oswald", sans-serif;
+}
+.home-produtos {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2fr, 2fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img img {
+    max-width: 700px;
+    width: 40%;
+    margin-left: 13%;
+}
+.home-text {
+    position: absolute;
+    left: 55%;
+}
+.home-text h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.home-text h5 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.home-text h3 {
+    font-size: 2.5vw;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+}
+.side-images {
+    position: absolute;
+    top:50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+.side-images li img{
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+.row {
+    background: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+.row:hover {
+    transform: translateY(-8px);
+}
+.row2 {
+    background: grey;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+.row2:hover {
+    transform: translateY(-8px);
+}
+.row3 {
+    background: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+.row3:hover {
+    transform: translateY(-8px);
+}
+.banner3 {
+    background: linear-gradient(-55deg, rgb(209, 227, 197), rgb(208, 226, 197), rgb(151, 174, 137), rgb(126, 157, 107));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding-bottom: 10px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
+}
+.banner3 img {
+    max-width: 20%;
+}
+.banner3 .banner-text {
+    margin-bottom: 45px;
+}
+/*CSS produtos */
+
+.banner2 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagens/produtos/banner2.jpg);
+    background-size: cover;
+    background-position: 69%;
+}
+.abaprodutos {
+    margin-left: 23px;
+    margin-right: 23px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.produto {
+    text-align: start;
+    width: 18%;
+    min-width: 250px;
+    padding: 12px;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+.produto:hover {
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+}
+.produto img {
+    width: 100%;
+;
+}
+.produto h5 {
+    padding-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+.produto h4 {
+    font-family: "Oswald";
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(140, 241, 100);
+}
+.produto h4 s {
+    font-size: 13px;
+    color: rgb(232, 232, 232);
+}
+.produto button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(147, 201, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    border: 0;
+    font-size: 14px;
+}
+.produto button:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    transition: 0.4s;
+}
+
+/*CSS cadastro */
+
+.maincadastro{
+    max-width: 100%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containermain {
+    background-color: white;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+.headercadastro {
+    background: rgb(147, 201, 255);
+    padding: 24px;
+    text-align: center;
+    color: black;
+}
+.formcadastro {
+    padding: 18px;
+}
+.formcontent {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+.formcontent label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.formcontent input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.formcontent a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+.formcadastro button {
+    background-color: rgb(147, 201, 255);
+    color: black;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+.formcadastro button:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    transition: 0.4s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+/*CSS geral */
+
+body {
+    padding-top: 106px;
+    background-image: linear-gradient(to right, rgb(152, 201, 250), rgb(152, 201, 250), white, white);
+}
+.navbar{
+    background-image: linear-gradient(to right, rgb(152, 201, 250), rgb(152, 201, 250), white, white);
+}
+.navbar-brand {
+    margin-left: 20px;
+}
+.nav-item {
+    margin-right: 14vh;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: white !important;
+}
+.d-flex {
+    margin-right: 10px;
+}
+.form-control {
+    margin-right: 8px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(147, 201, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+.navbar-toggler{
+  border: 2px solid rgb(147, 201, 255);
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.btn {
+    color: black;
+    background-color: rgb(147, 201, 255);
+    border: 2px solid rgb(147, 201, 255);
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    border: 2px solid rgb(93, 140, 186);
+}
+.container-banner {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+.banner-text {
+    padding-top: 13vh;
+    padding-left: 5vh;
+}
+.banner-text h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 8vh;
+}
+.banner-text h2{
+    font-size: 3vh;
+    font-weight: 400;
+}
+footer {
+    background-image: linear-gradient(to right, rgb(114, 153, 195), rgb(214, 214, 214));
+
+}
+
+/*CSS home */
+
+.banner {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagens/home/banner.jpg);
+    background-size: cover;
+    background-position: 69%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home-titles {
+    margin-top: 20px;
+}
+.home-titles h1{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+.card-gen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    width:325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.06);
+    margin: 20px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content h4 {
+    font-family: "Oswald", sans-serif;
+}
+.home-produtos {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2fr, 2fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img img {
+    max-width: 700px;
+    width: 40%;
+    margin-left: 13%;
+}
+.home-text {
+    position: absolute;
+    left: 55%;
+}
+.home-text h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.home-text h5 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.home-text h3 {
+    font-size: 2.5vw;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 20px;
+}
+.side-images {
+    position: absolute;
+    top:50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+.side-images li img{
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+.row {
+    background: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+.row:hover {
+    transform: translateY(-8px);
+}
+.row2 {
+    background: grey;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+.row2:hover {
+    transform: translateY(-8px);
+}
+.row3 {
+    background: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55s ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+.row3:hover {
+    transform: translateY(-8px);
+}
+.banner3 {
+    background: linear-gradient(-55deg, rgb(209, 227, 197), rgb(208, 226, 197), rgb(151, 174, 137), rgb(126, 157, 107));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding-bottom: 10px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
+}
+.banner3 img {
+    max-width: 20%;
+}
+.banner3 .banner-text {
+    margin-bottom: 45px;
+}
+/*CSS produtos */
+
+.banner2 {
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagens/produtos/banner2.jpg);
+    background-size: cover;
+    background-position: 69%;
+}
+.abaprodutos {
+    margin-left: 23px;
+    margin-right: 23px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.produto {
+    text-align: start;
+    width: 18%;
+    min-width: 250px;
+    padding: 12px;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+.produto:hover {
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+}
+.produto img {
+    width: 100%;
+;
+}
+.produto h5 {
+    padding-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+.produto h4 {
+    font-family: "Oswald";
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(140, 241, 100);
+}
+.produto h4 s {
+    font-size: 13px;
+    color: rgb(232, 232, 232);
+}
+.produto button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(147, 201, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    border: 0;
+    font-size: 14px;
+}
+.produto button:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    transition: 0.4s;
+}
+
+/*CSS cadastro */
+
+.maincadastro{
+    max-width: 100%;
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containermain {
+    background-color: white;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+.headercadastro {
+    background: rgb(147, 201, 255);
+    padding: 24px;
+    text-align: center;
+    color: black;
+}
+.formcadastro {
+    padding: 18px;
+}
+.formcontent {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+.formcontent label {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.formcontent input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.formcontent a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+.formcadastro button {
+    background-color: rgb(147, 201, 255);
+    color: black;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+.formcadastro button:hover {
+    color: black;
+    background-color: rgb(93, 140, 186);
+    transition: 0.4s;
+}
+
+/*CSS Sobre */
+
+.socialmedia {
+    display: flex; 
+    gap: 10px; 
+    position: relative;
+    bottom: 400px; 
+    margin-left: 9px;
+}
+.socialmedia img {
+    width: 30px;
+    height: auto; 
+}
+.socialmedia a {
+    display: inline-block; 
+    margin: 0 10px; 
+    border-radius: 50%; 
+    border: 2px solid rgb(93, 140, 186); 
+    padding: 5px; 
+    background-color: rgb(93, 140, 186); 
+}
+.sobre h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    margin-left: 30px;
+    line-height: 2;
+}
+.sobre h2 {
+    font-size: 20px; 
+    line-height: 2;
+    text-align: justify;
+    margin-left: 30px;
+}
+.sobre h3 {
+    font-size: 20px; 
+    text-align: justify;
+    margin-left: 30px;
+    
+}
+.sobre h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    line-height: 2;
+}
+.sobre h5{
+        font-family: "Oswald", sans-serif;
+        font-size: 20;
+        margin-left: 30px;
+        line-height: 2;
+}
+.content {
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50%; 
+    left: 900px;
+    transform: translate(-5%, -115%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px; 
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background-color: #dfdfdf;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%; 
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%; 
+}
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
