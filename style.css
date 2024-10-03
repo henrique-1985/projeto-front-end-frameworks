@@ -238,6 +238,7 @@ footer {
 .produto {
     text-align: start;
     width: 18%;
+    max-width: 250px;
     min-width: 250px;
     padding: 12px;
     background: rgba(0,0,0,0.3);
@@ -284,6 +285,19 @@ footer {
     color: black;
     background-color: rgb(93, 140, 186);
     transition: 0.4s;
+}
+.botoespaginas {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.botoespaginas a {
+    text-decoration: none;
+    background-color: rgb(147, 201, 255);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
 /*CSS cadastro */
